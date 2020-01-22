@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  data-frame:
+    build: A
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+
+  retrive:
+    build: B
+    ports:
+      - "5001:5001"
